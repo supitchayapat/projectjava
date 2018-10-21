@@ -1,19 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<?import javafx.scene.chart.BarChart?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.NumberAxis?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="controller.InformationController">
-   <children>
-      <BarChart layoutX="-8.0" layoutY="-35.0">
-        <xAxis>
-          <CategoryAxis side="BOTTOM" />
-        </xAxis>
-        <yAxis>
-          <NumberAxis side="LEFT" />
-        </yAxis>
-      </BarChart>
-   </children>
+    <children>
+        <AnchorPane layoutX="18.0" layoutY="8.0" prefHeight="199.0" prefWidth="678.0" styleClass="whiteBackground" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <ImageView fitHeight="162.0" fitWidth="190.0" layoutX="30.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="18.0">
+                    <image>
+                        <Image url="/imgs/avatar_female_facial_features_181809.png" />
+                    </image>
+                </ImageView>
+                <FlowPane layoutX="199.0" layoutY="26.0" prefHeight="162.0" prefWidth="451.0" vgap="3.0">
+                    <children>
+                        <FlowPane hgap="10.0" prefHeight="35.0" prefWidth="422.0">
+                            <children>
+                                <Label fx:id="studentName" text="Manusporn Fukkham" textFill="#008773">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </FlowPane>
+                        <Label fx:id="studentId" prefHeight="28.0" prefWidth="420.0" text="6010546702" textFill="#008773">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="studentFaculty" prefHeight="28.0" prefWidth="411.0" text="Engineeing" textFill="#008773">
+                            <font>
+                                <Font name="System Bold" size="19.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="studentEmail" prefHeight="28.0" prefWidth="426.0" text="Manusporn.f@ku.th" textFill="#008773">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" top="10.0" />
+                    </padding>
+                </FlowPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="21.0" layoutY="358.0" prefHeight="417.0" prefWidth="678.0" styleClass="whiteBackground" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <children>
+                <FlowPane alignment="TOP_CENTER" layoutY="19.0" prefHeight="403.0" prefWidth="678.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="19.0">
+                    <children>
+                        <AnchorPane prefHeight="360.0" prefWidth="640.0">
+                            <children>
+                                <GridPane layoutY="75.0" prefHeight="297.0" prefWidth="640.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="290.39996337890625" minHeight="10.0" prefHeight="277.4000244140625" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="36.599999999999994" minHeight="10.0" prefHeight="20.5999755859375" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <FlowPane alignment="CENTER" prefHeight="48.0" prefWidth="640.0" GridPane.rowIndex="1">
+                                            <children>
+                                                <Label fx:id="semesterLabel" styleClass="headInfo" text="First Semester 2017">
+                                                    <font>
+                                                        <Font name="System Bold" size="16.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </FlowPane>
+                                    </children>
+                                </GridPane>
+                                <GridPane layoutY="30.0" prefHeight="46.0" prefWidth="640.0" styleClass="headGrid">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="64.800048828125" minHeight="10.0" prefHeight="31.799999999999997" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <GridPane prefHeight="29.0" prefWidth="640.0" styleClass="headGrid">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.79998779296875" minWidth="10.0" prefWidth="162.79998779296875" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.3999877929688" minWidth="10.0" prefWidth="253.20001220703125" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.79998779296875" minWidth="10.0" prefWidth="122.60000000000002" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.20001220703125" minWidth="10.0" prefWidth="105.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                                    <children>
+                                                        <Label styleClass="headInfo" text="Course ID" textFill="#565656">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </FlowPane>
+                                                <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="253.0" GridPane.columnIndex="1">
+                                                    <children>
+                                                        <Label styleClass="headInfo" text="Course" textFill="#565656">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </FlowPane>
+                                                <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                                    <children>
+                                                        <Label styleClass="headInfo" text="Credits" textFill="#565656">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </FlowPane>
+                                                <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+                                                    <children>
+                                                        <Label styleClass="headInfo" text="Grade" textFill="#565656">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </FlowPane>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </GridPane>
+                                <Pane layoutX="219.0" layoutY="374.0" prefHeight="19.0" prefWidth="200.0" styleClass="backForwardPane">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="181.0" layoutY="-5.0" onMouseClicked="#rightRadioCourse" pickOnBounds="true" preserveRatio="true" styleClass="forwardButt">
+                                            <image>
+                                                <Image url="/imgs/icons8_Next_page_50px_1.png" />
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-15.0" layoutY="-5.0" onMouseClicked="#leftRadioCourse" pickOnBounds="true" preserveRatio="true" styleClass="backButt">
+                                            <image>
+                                                <Image url="/imgs/icons8_Back_To_50px_4.png" />
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                        <FlowPane fx:id="selectSemisterPane" alignment="CENTER" layoutX="13.0" layoutY="-1.0" prefHeight="22.0" prefWidth="172.0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </FlowPane>
+                <Label layoutX="21.0" layoutY="12.0" text="GRADE TABLE" textFill="#008773">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="20.0" layoutY="236.0" prefHeight="106.0" prefWidth="360.0" styleClass="whiteBackground" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="338.0">
+            <children>
+                <ImageView fitHeight="74.0" fitWidth="92.0" layoutX="17.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/imgs/144-512.png" />
+                    </image>
+                </ImageView>
+                <FlowPane layoutX="104.0" layoutY="18.0" prefHeight="70.0" prefWidth="246.0">
+                    <children>
+                        <Label fx:id="advisorName" prefHeight="35.0" prefWidth="249.0" text="Pakaket Wattuya " textFill="#008773">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="advisorId" alignment="CENTER" prefHeight="16.0" prefWidth="66.0" style="-fx-background-color: #00f0c0;" text="D1415" textFill="#007765">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                            <FlowPane.margin>
+                                <Insets right="10.0" />
+                            </FlowPane.margin>
+                        </Label>
+                        <Label fx:id="advisorEmail" prefHeight="32.0" prefWidth="169.0" text="Jitat.f@ku.th" textFill="#008773">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </FlowPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="398.40000000000003" layoutY="236.0" prefHeight="106.0" prefWidth="299.0" styleClass="whiteBackground" AnchorPane.rightAnchor="20.0">
+            <children>
+                <FlowPane alignment="CENTER" layoutX="6.0" layoutY="10.0" prefHeight="64.0" prefWidth="129.0">
+                    <children>
+                        <Text fill="#008773" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Semester GPA" textAlignment="CENTER" wrappingWidth="132.26662338639835">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#008773" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Semester GPA" textAlignment="CENTER" wrappingWidth="143.9998387184296">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </FlowPane>
+                <FlowPane layoutX="182.0" layoutY="8.0" prefHeight="38.0" prefWidth="38.0" vgap="10.0">
+                    <children>
+                        <Label fx:id="semGPA" text="4.00" textFill="#016c5c">
+                            <font>
+                                <Font name="Arial Bold" size="31.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="curGPA" text="3.72" textFill="#016c5c">
+                            <font>
+                                <Font name="Arial Bold" size="33.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </FlowPane>
+                <Label fx:id="semGPA1" layoutX="156.0" layoutY="9.0" text=":" textFill="#008773">
+                    <font>
+                        <Font name="Arial Bold" size="31.0" />
+                    </font>
+                </Label>
+                <Label fx:id="semGPA11" layoutX="156.0" layoutY="53.0" text=":" textFill="#008773">
+                    <font>
+                        <Font name="Arial Bold" size="31.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
 </AnchorPane>

@@ -3,11 +3,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class MainApp extends Application {
 
+
+public class MainApp extends Application {
+    Button welcome;
     public static void main(String[] args) {
         launch(args);
     }
@@ -23,14 +25,14 @@ public class MainApp extends Application {
     }
 
 
-    public void onActionWelcomeToScen(ActionEvent actionEvent) throws Exception {
-        Stage stage = new Stage();
-        Parent fxmlLoader = FXMLLoader.load(getClass().getResource("/view/infor.fxml"));
-        StackPane root = new StackPane();
-        Scene scene = new Scene(fxmlLoader, 1000.0, 100.0);
-        stage.setScene(new Scene(fxmlLoader,1000,600));
-        stage.setTitle("Profile Student");
+    public void onActionWelcomeToScen(ActionEvent actionEvent) throws Exception{
+        Stage stage = new Stage() ;
+        Parent parent = FXMLLoader.load(getClass().getResource("/view/infor.fxml"));
+        stage.setScene(new Scene(parent,1000,600));
+        stage.setTitle("Show information");
         stage.setResizable(false);
         stage.show();
+        
+        }
     }
-}
+
