@@ -173,15 +173,15 @@
                                               <Font name="System Bold" size="18.0" />
                                           </font>
                                       </Label>
+                            <Label layoutX="448.0" layoutY="163.0" text="GRADE TABLE" textFill="#008773">
+                                <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                </font>
+                            </Label>
                             </children>
                         </AnchorPane>
                     </children>
                 </FlowPane>
-                <Label layoutX="21.0" layoutY="12.0" text="GRADE TABLE" textFill="#008773">
-                    <font>
-                        <Font name="Arial Bold" size="20.0" />
-                    </font>
-                </Label>
             </children>
         </AnchorPane>
         <AnchorPane layoutX="20.0" layoutY="236.0" prefHeight="106.0" prefWidth="360.0" styleClass="whiteBackground" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="338.0">
@@ -201,14 +201,14 @@
                                 <Insets right="10.0" />
                             </FlowPane.margin>
                         </Label>
-                        <Label fx:id="advisorEmail" prefHeight="32.0" prefWidth="169.0" text="fscphk.f@ku.th" textFill="#008773">
-                            <font>
-                                <Font size="19.0" />
-                            </font>
-                        </Label>
                         <Label fx:id="advisorName" prefHeight="35.0" prefWidth="249.0" text="Pakaket Wattuya " textFill="#008773">
                             <font>
                                 <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="advisorEmail" prefHeight="32.0" prefWidth="169.0" text="fscphk.f@ku.th" textFill="#008773">
+                            <font>
+                                <Font size="19.0" />
                             </font>
                         </Label>
                     </children>

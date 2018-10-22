@@ -5,9 +5,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
-
-
 public class MainApp extends Application {
     Button welcome;
     public static void main(String[] args) {
@@ -26,13 +23,9 @@ public class MainApp extends Application {
 
 
     public void onActionWelcomeToScen(ActionEvent actionEvent) throws Exception{
-        Stage stage = new Stage() ;
-        Parent parent = FXMLLoader.load(getClass().getResource("/view/infor.fxml"));
-        stage.setScene(new Scene(parent,1000,600));
-        stage.setTitle("Show information");
-        stage.setResizable(false);
-        stage.show();
-        
         }
     }
+
+
+
 

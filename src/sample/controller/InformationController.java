@@ -57,8 +57,19 @@ public class InformationController {
     private int gradeViewCount;
     //TODO เพิ่มได้นะ  เมทธอดฟิวบลาๆ
 
+
+
+
+
+
+
+
     static void setGPA(String cur, String sem) {
         CUR_GPA = cur;
+
+
+
+
         SEM_GPA = sem;
     }
 

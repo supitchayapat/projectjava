@@ -7,6 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="MainApp">
    <children>
+
+
+
       <ImageView cache="true" disable="true" fitHeight="462.0" fitWidth="526.0" focusTraversable="true" layoutX="300.0" layoutY="22.0" mouseTransparent="true" opacity="0.63" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imgs/1200px-KU_SubLogo.png" />
